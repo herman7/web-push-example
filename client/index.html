@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Notification</title>
+  </head>
+  <body>
+    <h1>消息推送测试</h1>
+    <script src="./client.js"></script>
+
+    <!-- <button>Click</button>
+    <script>
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        if (!("Notification" in window)) {
+          alert("此浏览器不支持桌面通知，请更换浏览器尝试");
+          return;
+        }
+        if (Notification.permission === "granted") {  // 已授权过
+          notify();
+        } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then((permission) => {
+            if (permission === "granted") {
+              notify()
+            }
+          });
+        }
+      });
+
+      const notify = () => {
+        const notification = new Notification("我是测试Notification")
+        notification.addEventListener("error", (e) => {
+          alert("Error");
+          console.log('Error:', e)
+        });
+      };
+    </script> -->
+  </body>
+</html>
